@@ -10,13 +10,56 @@
     </p-card>
   </div>
   <div class="col-12 md:col-4">
-    <p-card header="lowercase">
+    <p-card header="Lowercase">
       {{nameLower | lowercase}}
     </p-card>
   </div>
   <div class="col-12 md:col-4">
-    <p-card header="tittleCase">
+    <p-card header="Tittlecase">
       {{nameTittle | titlecase}}
+    </p-card>
+  </div>
+  <!-- <div class="col-12 md:col-6">
+    <p-card header="Date">
+      <ul>
+        <li>Fecha normal: </li>
+        <li>Fecha pipe: </li>
+      </ul>
+    </p-card>
+  </div> -->
+  <div class="col-12 md:col-6">
+    <p-card header="Date">
+      <ol>
+        <li>
+          <strong> Fecha normal: </strong>{{customDate }}
+        </li>
+        <li>
+          <strong>Fecha Medium:</strong> {{customDate | date:'mediumDate'}}
+        </li>
+        <li>
+          <strong>Fecha Long:</strong> {{customDate | date:'longDate'}}
+        </li>
+        <li>
+          <strong>Fecha Mes:</strong> {{customDate | date:'MMMM'}}
+        </li>
+        <li>
+          <strong>Fecha mm-dd-AAAA :</strong> {{customDate |
+          date:'MMMM dd, yyyy'}}
+        </li>
+      </ol>
+      <hr>
+      <ol>
+        <li>
+          <strong>Fecha GMT-6</strong> {{ customDate | date: 'long':'GMT-6'}}
+        </li>
+        <li>
+          <strong>Fecha GMT-4</strong> {{ customDate | date: 'long':'GMT-4'}}
+        </li>
+        <li>
+          <strong>Fecha GMT-country</strong> {{ customDate | date:
+          'long':'':'es-CO'}}
+        </li>
+      </ol>
     </p-card>
   </div>
 </div>
