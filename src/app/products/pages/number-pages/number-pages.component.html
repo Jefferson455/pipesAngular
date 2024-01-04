@@ -1,1 +1,22 @@
-<p>number-pages works!</p>
+<p-panel header="Pipes básicos" class="p-2">
+  <p>pipes oincluidos dentro del number module</p>
+
+</p-panel>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Ventas netas del año">
+      {{totalSeller + 1235 | number:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas brutas" subheader="Ventas brutas del año">
+      {{totalSeller | currency:'COP':'symbol-narrow':'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancia porcentual" subheader="Ganancias del presente año">
+      {{percent | percent:'1.2-2'}}
+    </p-card>
+  </div>
+</div>
