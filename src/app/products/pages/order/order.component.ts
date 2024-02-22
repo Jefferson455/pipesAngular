@@ -11,6 +11,7 @@ import { Color } from '../../interfaces/hero.interface';
 export class OrderComponent {
   by: string = 'Jefferson'
   public isUpperCase: boolean = false;
+  //---Start Data---//
   public heroes: Hero[] = [
     {
       name: 'Flash',
@@ -33,6 +34,7 @@ export class OrderComponent {
       color: Color.red
     }
   ]
+  //---end---//
 
 
   toogleUpperCase(): void {
