@@ -8,6 +8,9 @@ import { UcommonPagesComponent } from './pages/ucommon-pages/ucommon-pages.compo
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToogleCasePipe } from './pipes/toogle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
+import { ColorNamePipe } from './pipes/color-name.pipe';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { ToogleCasePipe } from './pipes/toogle-case.pipe';
     UcommonPagesComponent,
     OrderComponent,
     //Pipes
-    ToogleCasePipe
+    ToogleCasePipe,
+    CanFlyPipe,
+    SortByPipe,
+    ColorNamePipe
   ],
   imports: [
     CommonModule,
